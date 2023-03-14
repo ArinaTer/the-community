@@ -1,0 +1,141 @@
+.main-header
+    position: fixed
+    top: 0
+    z-index: 10
+    width: 100%
+    transition: top .5s, 1s ease
+    background-color: rgba(0,0,0,0.6)
+
+    &__container
+        display: flex
+        justify-content: space-between
+        align-items: center
+        height: 80px
+        +r(768)
+            justify-content: space-around
+
+    &__action
+        display: flex
+        align-items: center
+        gap: 80px
+        +r(768)
+            gap: 30px
+
+    &__burger
+        display: flex
+        align-items: center
+        gap: 15px
+
+        &:hover
+            .main-header__burger-line
+                border-color: $b8
+            .main-header__burger-text
+                span
+                    color: $b8
+
+    &__burger-list
+        display: flex
+        gap: 4px
+        flex-direction: column
+
+    &__burger-line
+        display: block
+        width: 50px
+        border-bottom: 2px solid $w
+        transition: .5s
+        +r(576)
+            width: 40px
+
+    &__burger-text
+        span
+            font-size: 16px
+            line-height: 20px
+            text-transform: uppercase
+            color: $w
+            transition: .5s
+            +mreg
+            +r(768)
+                font-size: 14px
+
+    &__bruchure
+        button
+            font-size: 15px
+            line-height: 114%
+            text-align: center
+            color: $w
+            text-transform: uppercase
+            display: flex
+            justify-content: center
+            padding: 13px 30px
+            border: 1px solid $w
+            border-radius: 70px
+            background-image: linear-gradient($w, $w)
+            background-position: 0% 50%
+            background-repeat: no-repeat
+            background-size: 0% 100%
+            transition: background-size .5s, color .5s
+            +mreg
+            +r(768)
+                font-size: 13px
+            &:hover
+                background-size: 100% 100%
+                color: $b
+
+    &__phone
+        display: flex
+        gap: 5px
+        font-size: 16px
+        line-height: 20px
+        text-transform: uppercase
+        color: $w
+        transition: .5s
+        +r(768)
+            display: none !important
+
+        &:hover
+            color: $b8 !important
+
+    &__phone-mob
+        display: none
+        animation: ring 8s ease infinite
+        transform-origin-x: 50%
+        transform-origin-y: 0
+        transform-origin-z: initial
+        +r(768)
+            display: block
+
+    .phone-replace-only
+        font-size: 16px
+        line-height: 20px
+        text-transform: uppercase
+        color: $w
+
+    &__menu
+        position: absolute
+        top: 80px
+        width: 100%
+        padding: 50px 0
+        background-color: rgba(0,0,0,0.6)
+        +r(768)
+            padding: 30px 0
+        &__list
+            display: flex
+            gap: 100px
+            width: 100%
+            padding: 0
+            margin: 0
+            +r(768)
+                flex-direction: column
+                align-items: center
+                gap: 30px
+                justify-content: center
+
+        .menu__link
+            font-size: 20px
+            line-height: 20px
+            color: $w
+            transition: .5s
+            +r(768)
+                font-size: 18px
+            &:hover
+                color: $b8

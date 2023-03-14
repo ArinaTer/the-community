@@ -1,0 +1,77 @@
+body
+	min-width: 320px
+	color: $b
+	position: relative
+	height: auto
+	font-size: 16px
+	overflow: hidden
+	background-color: $w
+	+greg
+.modal-open
+	padding-right: 0 !important
+body.loaded
+	overflow-x: hidden
+	overflow: initial
+
+.body-overlay
+	width: 100vw
+	height: 100vh
+	visibility: hidden
+	position: fixed
+	z-index: 3
+	opacity: 0
+	top: 0
+	overflow: hidden
+	background: rgba(0,0,0,.4)
+
+::selection
+	background-color: #EDE7E2
+	color: #343435
+
+.app
+	overflow: hidden
+
+a
+	text-decoration: none
+
+.split-lines
+	> .word
+		position: relative
+		display: inline-flex
+		> .word
+			will-change: transform
+			transform: translateY(100%)
+			opacity: 0
+
+.split-lines-box.split
+	.split-lines
+		> .word
+			> .word
+				animation: slide-in .3s cubic-bezier(.5, 0, .5, 1) both
+				animation-delay: calc(0.3s * var(--line-index))
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active
+	transition: background-color 5000s ease-in-out 0s
+	-webkit-text-fill-color: $w!important
+
+button:focus:not(:focus-visible)
+	outline: none !important
+
+.btn-check:focus + .btn, .btn:focus
+	outline: none !important
+	box-shadow: none !important
+
+*
+	outline: none !important
+
+.btn:disabled, .btn.disabled, fieldset:disabled .btn
+	border-color: transparent
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show
+	border-color: transparent
+
+.popup-modal.show
+	display: block

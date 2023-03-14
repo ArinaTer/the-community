@@ -1,0 +1,328 @@
+.main-modal.show
+    background-color: rgb(255 255 255 / 50%)
+
+.main-modal.fade
+    .modal-dialog
+        transform: translateX(100%)
+
+.main-modal.show
+    .modal-dialog
+        transform: none
+
+.main-modal
+    .modal-content
+        height: 100%
+        background: #C77C46
+        border: 2px solid $w
+        border-radius: 33px 0px 0px 33px
+        +rrh(720,1114)
+            height: auto
+        +r(992)
+            height: 100%
+
+    .modal-dialog
+        margin-right: 0
+        margin-top: 0
+        margin-bottom: 0
+        height: 100%
+        transform: translateX(100%)
+
+    .modal-dialog-centered
+        min-height: 100%
+
+    &__close-btn
+        display: flex
+        justify-content: flex-end
+        padding: 30px 30px 0
+        +r(768)
+            padding: 15px 15px 0
+
+    &__body
+        padding: 0 35px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        gap: 40px
+        +r(992)
+            gap: 30px
+        +r(768)
+            gap: 20px
+        +r(576)
+            padding: 0 25px 0
+
+    &__list
+        display: flex
+        justify-content: space-between
+        margin-bottom: 0
+        list-style-type: disc
+        +r(992)
+            margin-bottom: 30px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px 0
+
+        &__item
+            font-size: 24px
+            line-height: 96.5%
+            color: $w
+            +glight
+            +r(768)
+                font-size: 18px
+
+    &__title
+        font-size: 48px
+        line-height: 56px
+        text-transform: uppercase
+        color: $w
+        +gmed
+        +r(768)
+            font-size: 40px
+            line-height: 130%
+        +r(576)
+            font-size: 26px
+            padding: 0
+
+    &__form
+        display: flex
+        flex-direction: column
+        gap: 20px
+        +r(1280)
+            gap: 30px
+        +r(576)
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+    &__box
+        .form-control
+            background-color: transparent
+            border: none
+            border-bottom: 0.5px solid $w
+            border-radius: 0
+            padding: 1rem 0.75rem
+            color: $w
+
+            &:focus
+                outline: 0
+                border: none
+                border-bottom: 2px solid $w
+                box-shadow: none
+
+        label
+            color: $w
+
+    .iti
+        .form-control
+            &::placeholder
+                color: $w
+
+    .form-floating > .form-control:-webkit-autofill, .form-floating > .form-control-plaintext:-webkit-autofill
+        padding-top: 2.5rem
+        padding-bottom: 1rem
+
+    &__btn
+        margin: 0 auto 15px
+        width: 70%
+        font-size: 16px
+        line-height: 19px
+        text-align: center
+        text-transform: uppercase
+        color: $b
+        background-color: $w
+        border-radius: 80px
+        display: flex
+        align-items: center
+        justify-content: center
+        gap: 10px
+        padding: 18px 30px
+        background-image: linear-gradient($b, $b)
+        background-position: 0% 50%
+        background-repeat: no-repeat
+        background-size: 0% 100%
+        transition: background-size .5s, color .5s
+        +r(768)
+            margin: 30px auto 15px
+        +r(576)
+            width: 100%
+
+        &:hover
+            background-image: linear-gradient($b, $b)
+            background-color: $w
+            background-size: 100% 100%
+            color: $w
+            svg
+                path
+                    stroke: $w
+
+            svg
+                path
+                    transition: .5s
+
+    &__item
+        display: block
+        text-align: center
+        font-size: 14px
+        line-height: 16px
+        color: rgba(255, 255, 255, 0.6)
+
+.popup-modal
+
+    .modal-content
+        background: #0B0B0B
+        border-radius: 30px
+        padding: 0
+
+    .modal-body
+        padding: 0
+
+    &__close-btn
+        display: flex
+        justify-content: flex-end
+        padding: 30px 30px 0
+        +r(768)
+            padding: 15px 15px 0
+
+    &__body
+        display: flex
+        +r(992)
+            flex-direction: column
+            gap: 30px
+
+    &__odd
+        flex-basis: 50%
+        max-width: 50%
+        padding: 0 20px 90px 90px
+        +r(992)
+            flex-basis: 100%
+            max-width: 100%
+            padding: 0 30px 50px
+
+    &__list
+        list-style-type: disc
+        display: flex
+        padding: 0
+        justify-content: space-between
+        +r(1280)
+            flex-wrap: wrap
+            gap: 20px 40px
+            justify-content: center
+        +r(992)
+            padding-top: 30px
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 20px 0
+            padding-left: 2rem
+
+    &__title
+        font-size: 28px
+        line-height: 110%
+        text-align: center
+        text-transform: uppercase
+        color: #C77C46
+        padding: 0 0 30px
+        +greg
+
+    &__item
+        font-size: 14px
+        line-height: 16px
+        color: #FFFFFF
+        +glight
+        +r(992)
+            justify-self: center
+
+    &__form
+        display: flex
+        flex-direction: column
+        gap: 30px
+        +r(1280)
+            gap: 30px
+        +r(576)
+            display: flex
+            flex-direction: column
+            gap: 20px
+
+        &__input
+            .form-control
+                background-color: transparent
+                border: none
+                border-bottom: 0.5px solid $w
+                border-radius: 0
+                padding: 1rem 0.75rem
+                color: $w
+
+                &:focus
+                    outline: 0
+                    border: none
+                    border-bottom: 2px solid $w
+                    box-shadow: none
+
+                &::placeholder
+                    color: $w
+
+        .iti
+            .form-control
+                &::placeholder
+                    color: $w
+
+        .form-floating > .form-control:-webkit-autofill, .form-floating > .form-control-plaintext:-webkit-autofill
+            padding-top: 2.5rem
+            padding-bottom: 1rem
+
+        &__btn
+            margin: 0 auto 15px
+            width: 100%
+            font-size: 16px
+            line-height: 19px
+            text-align: center
+            text-transform: uppercase
+            color: $w
+            background-color: #C77C46
+            border-radius: 80px
+            display: flex
+            align-items: center
+            justify-content: center
+            gap: 10px
+            padding: 18px 30px
+            background-image: linear-gradient($w, $w)
+            background-position: 0% 50%
+            background-repeat: no-repeat
+            background-size: 0% 100%
+            transition: background-size .5s, color .5s
+            +r(768)
+                margin: 15px auto
+            +r(576)
+                width: 100%
+
+            &:hover
+                background-image: linear-gradient($w, $w)
+                background-color: #C77C46
+                background-size: 100% 100%
+                color: #C77C46
+                svg
+                    path
+                        fill: #C77C46
+                        stroke: $w
+
+                svg
+                    path
+                        transition: .5s
+
+        &__item
+            display: block
+            text-align: center
+            font-size: 14px
+            line-height: 16px
+            color: rgba(255, 255, 255, 0.6)
+
+    &__even
+        flex-basis: 50%
+        max-width: 50%
+        position: relative
+        +r(992)
+            display: none
+
+    img
+        position: absolute
+        top: 50%
+        right: -10%
+        transform: translate(0, -50%)

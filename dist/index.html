@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>The Comunity</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="preload" as="image" href="img/preloader.gif">
+	<meta name="msapplication-TileColor" content="#a08a71">
+	<meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css"
+		integrity="sha512-F2E+YYE1gkt0T5TVajAslgDfTEUQKtlu4ralVq78ViNxhKXQLrgQLLie8u1tVdG2vWnB3ute4hcdbiBtvJQh0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+	<div class="app">
+		<div class="main-preloader">
+			<div class="main-preloader__img">
+				<img src="img/preloader.gif" alt="">
+			</div>
+		</div>
+		<!-- header -->
+		<header class="main-header" id="fixed-top">
+			<div class="main-header__container container">
+				<div class="main-header__action">
+					<div class="main-header__btn">
+						<button class="main-header__burger btn-toggler">
+							<div class="main-header__burger-list">
+								<span class="main-header__burger-line main-header__burger-line_top"></span>
+								<span class="main-header__burger-line main-header__burger-line_bot"></span>
+							</div>
+							<div class="main-header__burger-text">
+								<span>menu</span>
+							</div>
+						</button>
+					</div>
+					<div class="main-header__bruchure">
+						<button type="button" data-bs-toggle="modal" data-bs-target="#mainModal">bruchure</button>
+					</div>
+				</div>
+				<div class="main-header__contact">
+					<a href="#" class="main-header__phone phone-replace-only" data-gtag-click="phone_call">
+						<span class="main-header__phone-num">+971 56 <span>xxx-xx-xx</span></span>
+						<span class="main-header__phone-text">show number</span>
+					</a>
+					<a href="#" class="main-header__phone-mob event_call" data-gtag-click="phone_call">
+						<svg width="25" height="25" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M16.2129 11.9945L12.3656 10.3538C12.1671 10.2649 11.9492 10.228 11.7325 10.2466C11.5157 10.2653 11.3073 10.3389 11.127 10.4605L9.06797 11.8304C7.8131 11.2209 6.79708 10.2107 6.18047 8.95932L7.54219 6.87572C7.66297 6.69515 7.73674 6.48728 7.7568 6.27096C7.77685 6.05465 7.74256 5.83675 7.65703 5.63705L6.0082 1.78979C5.89315 1.53 5.69833 1.31363 5.45201 1.17203C5.20569 1.03043 4.92067 0.970976 4.63828 1.00229C3.53053 1.1474 2.51316 1.68985 1.77533 2.52877C1.0375 3.36769 0.629416 4.44601 0.626953 5.56322C0.626953 12.0765 5.92617 17.3757 12.4395 17.3757C13.5567 17.3733 14.635 16.9652 15.4739 16.2274C16.3128 15.4895 16.8553 14.4722 17.0004 13.3644C17.0317 13.082 16.9722 12.797 16.8306 12.5507C16.6891 12.3043 16.4727 12.1095 16.2129 11.9945Z"
+								fill="white" />
+						</svg>
+					</a>
+				</div>
+			</div>
+			<div class="main-header__menu">
+				<div class="main-header__menu_container container">
+					<ul class="main-header__menu__list">
+						<li class="main-header__menu__item"><a href="#about" class="menu__link">About</a></li>
+						<li class="main-header__menu__item"><a href="#dev" class="menu__link">Developer</a></li>
+						<li class="main-header__menu__item"><a href="#location" class="menu__link">Location</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<!-- banner -->
+		<section class="panel">
+			<div class="main-banner main-panel">
+				<div class="main-banner__img">
+					<img src="img/main-banner.jpg" alt="">
+				</div>
+				<div class="main-banner__img--mob">
+					<img src="img/main-banner.jpg" alt="">
+				</div>
+				<div class="main-banner__container container main-panel-container">
+					<div class="main-banner__headline">
+						<div class="main-banner__item">
+							<span>Welcome To The</span>
+						</div>
+						<div class="main-banner__title">
+							<h2>comunity </h2>
+						</div>
+						<div class="main-banner__subtitle">
+							<span>Live. Work. Play.</span>
+						</div>
+						<div class="main-banner__btn">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#mainModal">Enter Experience
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.7625 17.2375L18 13M18 13L13.7625 8.7625M18 13H8M25 13C25 19.6274 19.6274 25 13 25C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13Z"
+										stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- about -->
+		<section class="panel" id="about">
+			<div class="main-about main-panel">
+				<div class="main-about__container container">
+					<div class="main-about__odd gs-anim">
+						<div class="main-about__title">
+							<h3>The Community</h3>
+						</div>
+						<div class="main-about__text">
+							<p>The Community is more than just a co-living concept, it's a co-working space allowing
+								young
+								professionals to work from the comfort of their home. It is a premium hotel-style living
+								with a novel approach to daily activities.</p>
+						</div>
+						<div class="main-about__list">
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/gym.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>State of the<br>
+										art Gym</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/chess.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Open Air<br>
+										Chess</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/golf.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Open air<br>
+										Golf Simulator</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/golf.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Jogging <br>
+										Track</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/business.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Business <br>
+										centre</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/stores.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Retail <br>
+										stores</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/badminton.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Badminton <br>
+										Court</span>
+								</div>
+							</div>
+							<div class="main-about__list-item">
+								<div class="main-about__list-icons">
+									<img src="img/icons/cafe.svg" alt="">
+								</div>
+								<div class="main-about__list-text">
+									<span>Restaurants <br>
+										and Cafe</span>
+								</div>
+							</div>
+						</div>
+						<div class="main-about__btn">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#mainModal">Learn more
+								<svg width="12" height="10" viewBox="0 0 12 10" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path d="M6.7625 9.475L11 5.2375M11 5.2375L6.7625 1M11 5.2375H1" stroke="white"
+										stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div class="main-about__even gs-anim">
+						<div class="main-about__img">
+							<img src="img/about-img.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- developer -->
+		<section class="panel" id="dev">
+			<div class="main-developer main-panel">
+				<div class="main-developer__container container">
+					<div class="main-developer__odd gs-anim">
+						<div class="main-developer__img">
+							<img src="img/main-developer.jpg" alt="">
+						</div>
+					</div>
+					<div class="main-developer__even gs-anim">
+						<div class="main-developer__logo">
+							<img src="img/logo-developer.svg" alt="">
+						</div>
+						<div class="main-developer__title">
+							<h3>DELIVERING BEYOND YOUR EXPECTATION SINCE 2010</h3>
+						</div>
+						<div class="main-developer__text">
+							<p>Established in 2010, AQUA Developments turned into a full-service development company
+								delivering the most selective residential and commercial properties designed to cater to
+								its clients' needs in
+								terms of quality finishes, smart homes
+								and prime locations.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- brochure -->
+		<section class="panel">
+			<div class="main-brochure main-panel">
+				<div class="main-brochure__container container">
+					<div class="main-brochure__odd gs-anim">
+						<form action="" method="post" class="main-brochure__form">
+							<div class="main-brochure__form-title">
+								<h4><span>Download</span> brochure
+									in one click</h4>
+							</div>
+							<div class="main-brochure__form-box form-floating">
+								<input type="text" name="name" class="form-control" id="floatingName"
+									placeholder="Your name" required>
+								<label for="floatingName">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M11.9997 22C8.04548 22 5.18244 22 3.3237 19.4545C1.46495 16.9091 8.04551 15 11.9997 15C15.9539 15 22.5354 16.9091 20.6762 19.4545C18.8169 21.9999 15.9538 22 11.9997 22Z"
+											stroke="#656565" stroke-width="1.5" />
+										<circle cx="12" cy="7" r="5" stroke="#656565" stroke-width="1.5" />
+										<circle cx="12" cy="7" r="5" stroke="#656565" stroke-width="1.5" />
+									</svg>
+									Your name</label>
+							</div>
+							<div class="main-brochure__form-box form-floating">
+								<input type="email" name="email" class="form-control" id="floatingMail"
+									placeholder="Your email" required>
+								<label for="floatingMail">
+									<svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<rect x="2" y="4.5" width="20" height="16" rx="2" stroke="#656565"
+											stroke-width="1.5" />
+										<path
+											d="M2 6.72222C2 5.49492 2.99492 4.5 4.22222 4.5H19.7778C21.0051 4.5 22 5.49492 22 6.72222V7.92857L12.9239 12.0776C12.3372 12.3459 11.6628 12.3459 11.0761 12.0776L2 7.92857V6.72222Z"
+											stroke="#656565" stroke-width="1.5" />
+										<path d="M2 16.5L9 11.5" stroke="#656565" stroke-width="1.5" />
+										<path d="M22 16.5L15 11.5" stroke="#656565" stroke-width="1.5" />
+									</svg>
+									Your email</label>
+							</div>
+							<div class="main-brochure__form-box">
+								<input type="tel" name="phone" class="form-control" placeholder="Your number" required>
+							</div>
+							<input type="hidden" name="project" value="the_comunity">
+							<input type="hidden" name="description" value="page_form">
+							<input type="hidden" name="duration" class="duration" value="">
+							<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+							<input type="hidden" name="language" value="english">
+							<button class="main-brochure__form-btn" type="submit">Download Brochure
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.7625 17.2375L18 13M18 13L13.7625 8.7625M18 13H8M25 13C25 19.6274 19.6274 25 13 25C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13Z"
+										stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+							<span class="main-brochure__form-item">64 Pages | Download time - 10 sec.</span>
+						</form>
+					</div>
+					<div class="main-brochure__even gs-anim">
+						<div class="main-brochure__title">
+							<h3>Descriptive <span>brochure</span> about comunity</h3>
+						</div>
+						<ul class="main-brochure__list">
+							<li>Masterplan</li>
+							<li>Lifestyle</li>
+							<li>Gallery</li>
+							<li>Floor plans</li>
+						</ul>
+						<div class="main-brochure__img">
+							<img src="img/main-brochure.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- location -->
+		<section class="panel" id="location">
+			<div class="main-location main-panel">
+				<div class="main-location__container container">
+					<div class="main-location__odd gs-anim">
+						<div class="main-location__title">
+							<h3>Location</h3>
+						</div>
+						<div class="main-location__text">
+							<p>The Community is situated in Motor City, Dubai’s sport-themed community. This
+								established, self-contained community is ideally located in the centre of everything the
+								city has to offer, and provides easy access to the city’s business districts and many
+								tourist attractions, as well as Dubai International Airport and
+								Al Maktoum International Airport.</p>
+						</div>
+						<div class="main-location__btn">
+							<button type="button" data-bs-toggle="modal" data-bs-target="#mainModal">Enquire</button>
+						</div>
+					</div>
+					<div class="main-location__even gs-anim">
+						<div class="main-location__img">
+							<img src="img/main-location.png" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- footer -->
+		<footer class="panel">
+			<div class="main-footer main-panel">
+				<div class="main-footer__video">
+					<video class="header__video" autoplay playsinline muted loop data-scroll data-scroll-speed="-2">
+						<source src="video/footer.mp4"
+							type="video/mp4" />
+					</video>
+				</div>
+				<div class="main-footer__container container">
+					<div class="main-footer__box">
+						<div class="main-footer__odd gs-anim">
+							<div class="main-footer__title">
+								<h3>Community</h3>
+							</div>
+							<div class="main-footer__text">
+								<p>The Community presents a brand new co-living concept which is gaining popularity
+									among
+									Millennials, young professionals and entrepreneurs worldwide.</p>
+							</div>
+							<div class="main-footer__title-item">
+								<span>range from 442 sq.ft. to 2521 Sq. FT. </span>
+							</div>
+							<div class="main-footer__text-item">
+								<span>Size of rooms</span>
+							</div>
+						</div>
+						<div class="main-footer__even gs-anim">
+							<form action="" method="post" class="main-footer__form">
+								<div class="main-footer__form-title">
+									<h4>CONTACT US</h4>
+								</div>
+								<div class="main-footer__form-box">
+									<input type="text" name="name" class="form-control" placeholder="Your name"
+										required>
+
+								</div>
+								<div class="main-footer__form-box">
+									<input type="email" name="email" class="form-control" placeholder="Your email"
+										required>
+								</div>
+								<div class="main-footer__form-box">
+									<input type="tel" name="phone" class="form-control" placeholder="Your number"
+										required>
+								</div>
+								<input type="hidden" name="project" value="the_comunity">
+								<input type="hidden" name="description" value="page_form">
+								<input type="hidden" name="duration" class="duration" value="">
+								<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+								<input type="hidden" name="language" value="english">
+								<div class="main-footer__form-social">
+									<button class="main-footer__form-btn" type="submit">Enquire</button>
+									<a href="#">
+										<svg width="43" height="42" viewBox="0 0 43 42" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M11.6864 20.2561C11.6864 20.2561 20.2312 16.6572 23.1947 15.3899C24.3307 14.883 28.1832 13.2609 28.1832 13.2609C28.1832 13.2609 29.9614 12.5513 29.8132 14.2747C29.7638 14.9844 29.3686 17.4682 28.9735 20.1547C28.3808 23.9564 27.7387 28.1129 27.7387 28.1129C27.7387 28.1129 27.6399 29.2788 26.8003 29.4816C25.9606 29.6843 24.5776 28.772 24.3307 28.5691C24.1331 28.4171 20.6263 26.1361 19.3421 25.0209C18.9964 24.7168 18.6013 24.1085 19.3915 23.3988C21.1696 21.7261 23.2934 19.6478 24.5776 18.3299C25.1704 17.7216 25.763 16.3023 23.2934 18.0257C19.7867 20.5095 16.3293 22.8413 16.3293 22.8413C16.3293 22.8413 15.539 23.3481 14.0572 22.8919C12.5754 22.4358 10.8467 21.8275 10.8467 21.8275C10.8467 21.8275 9.66139 21.0671 11.6864 20.2561Z"
+												fill="white" />
+										</svg>
+									</a>
+									<a href="#">
+										<svg width="43" height="42" viewBox="0 0 43 42" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M10.5017 30.7228L12.0084 25.1205C10.7933 22.9381 10.4072 20.3915 10.9211 17.9479C11.4349 15.5043 12.8142 13.3276 14.8058 11.8173C16.7975 10.3071 19.2678 9.56445 21.7636 9.7258C24.2594 9.88714 26.6132 10.9416 28.3931 12.6957C30.173 14.4498 31.2596 16.7859 31.4535 19.2752C31.6474 21.7646 30.9355 24.2402 29.4487 26.2479C27.9618 28.2556 25.7995 29.6607 23.3587 30.2053C20.9179 30.7498 18.3623 30.3974 16.1607 29.2126L10.5017 30.7228ZM16.4336 27.1162L16.7836 27.3235C18.3782 28.2671 20.2407 28.6576 22.0808 28.4341C23.9209 28.2106 25.6353 27.3857 26.9568 26.0879C28.2783 24.7901 29.1326 23.0924 29.3867 21.2592C29.6408 19.4261 29.2803 17.5605 28.3615 15.9532C27.4427 14.346 26.0171 13.0873 24.3069 12.3733C22.5967 11.6594 20.698 11.5303 18.9066 12.0061C17.1153 12.482 15.5319 13.536 14.4033 15.0041C13.2746 16.4721 12.6641 18.2717 12.6669 20.1223C12.6654 21.6567 13.0904 23.1615 13.8948 24.4691L14.1142 24.8303L13.2719 27.9572L16.4336 27.1162Z"
+												fill="white" />
+											<path fill-rule="evenodd" clip-rule="evenodd"
+												d="M24.9281 21.561C24.7229 21.3958 24.4827 21.2795 24.2257 21.221C23.9687 21.1625 23.7018 21.1633 23.4451 21.2234C23.0596 21.3833 22.8104 21.9874 22.5613 22.2894C22.5088 22.3618 22.4316 22.4126 22.3442 22.4322C22.2568 22.4518 22.1653 22.439 22.0867 22.396C20.6751 21.8441 19.4919 20.8318 18.7293 19.5238C18.6642 19.4422 18.6334 19.3385 18.6434 19.2347C18.6534 19.1309 18.7033 19.035 18.7827 18.9671C19.0605 18.6925 19.2646 18.3524 19.3759 17.9781C19.4006 17.5654 19.3059 17.1542 19.103 16.7937C18.9462 16.2883 18.6477 15.8383 18.2429 15.4968C18.0341 15.403 17.8025 15.3716 17.5763 15.4063C17.35 15.441 17.1385 15.5403 16.9675 15.6922C16.6706 15.948 16.4349 16.2669 16.2779 16.6257C16.1208 16.9844 16.0463 17.3737 16.0599 17.765C16.0608 17.9847 16.0887 18.2034 16.143 18.4164C16.2807 18.928 16.4925 19.4168 16.7718 19.8673C16.9732 20.2124 17.193 20.5465 17.4302 20.8681C18.2011 21.9246 19.1701 22.8216 20.2834 23.5094C20.8421 23.8588 21.4393 24.143 22.063 24.3562C22.711 24.6494 23.4264 24.762 24.1332 24.6819C24.536 24.6211 24.9176 24.4623 25.2445 24.2196C25.5713 23.977 25.8334 23.6578 26.0077 23.2902C26.1101 23.0682 26.1412 22.82 26.0967 22.5796C25.9899 22.0881 25.3315 21.7979 24.9281 21.561Z"
+												fill="white" />
+										</svg>
+									</a>
+									<a href="#">
+										<svg width="43" height="42" viewBox="0 0 43 42" fill="none"
+											xmlns="http://www.w3.org/2000/svg">
+											<path
+												d="M28.2129 22.9945L24.3656 21.3538C24.1671 21.2649 23.9492 21.228 23.7325 21.2466C23.5157 21.2653 23.3073 21.3389 23.127 21.4605L21.068 22.8304C19.8131 22.2209 18.7971 21.2107 18.1805 19.9593V19.9593L19.5422 17.8757C19.663 17.6952 19.7367 17.4873 19.7568 17.271C19.7769 17.0546 19.7426 16.8367 19.657 16.6371L18.0082 12.7898C17.8931 12.53 17.6983 12.3136 17.452 12.172C17.2057 12.0304 16.9207 11.971 16.6383 12.0023C15.5305 12.1474 14.5132 12.6898 13.7753 13.5288C13.0375 14.3677 12.6294 15.446 12.627 16.5632C12.627 23.0765 17.9262 28.3757 24.4395 28.3757C25.5567 28.3733 26.635 27.9652 27.4739 27.2273C28.3128 26.4895 28.8553 25.4722 29.0004 24.3644C29.0317 24.082 28.9722 23.797 28.8306 23.5507C28.6891 23.3043 28.4727 23.1095 28.2129 22.9945Z"
+												fill="white" />
+										</svg>
+									</a>
+								</div>
+							</form>
+						</div>
+					</div>
+					<div class="main-footer__logo">
+						<a href="#">
+							<img src="img/logo-footer.svg" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- modal main-modal -->
+	<div class="main-modal modal fade" id="mainModal" tabindex="-1" aria-labelledby="mainModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-lg">
+			<div class="main-modal modal-content">
+				<button type="button" class="main-modal__close-btn" data-bs-dismiss="modal">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="11" y="10" width="16" height="2" transform="rotate(45 11 10)" fill="white" />
+						<rect x="10" y="21" width="16" height="2" transform="rotate(-45 10 21)" fill="white" />
+						<circle cx="16" cy="16" r="15" stroke="white" stroke-width="2" />
+					</svg>
+				</button>
+				<div class="main-modal__body modal-body container">
+					<h4 class="main-modal__title">Descriptive brochure <br>
+						about comunity
+					</h4>
+					<ul class="main-modal__list">
+						<li class="main-modal__list__item">
+							<span>Masterplan</span>
+						</li>
+						<li class="main-modal__list__item">
+							<span>Lifestyle</span>
+						</li>
+						<li class="main-modal__list__item">
+							<span>Gallery</span>
+						</li>
+						<li class="main-modal__list__item">
+							<span>Floor plans</span>
+						</li>
+					</ul>
+					<form action="" method="post" class="main-modal__form" data-gtag-submit="popup">
+						<div class="main-modal__box form-floating">
+							<input class="form-control" id="name" type="name" name="name" placeholder="Last name"
+								pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+							<label for="name">Last name</label>
+						</div>
+						<div class="main-modal__box">
+							<input class="form-control" id="phone" type="tel" name="phone" placeholder="Phone number"
+								pattern="[+]?[0-9].{8,15}$" required>
+						</div>
+						<div class="main-modal__box form-floating">
+							<input class="form-control" id="email" type="email" name="email" placeholder="Email adress"
+								pattern="[+]?[0-9].{8,15}$" required>
+							<label for="email">Email adress</label>
+						</div>
+						<input type="hidden" name="project" value="the_comunity">
+						<input type="hidden" name="description" value="page_form">
+						<input type="hidden" name="duration" class="duration" value="">
+						<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+						<input type="hidden" name="language" value="english">
+						<div class="main-modal__buttons">
+							<button class="main-modal__btn" type="submit">Download Brochure
+								<svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M13.7625 17.2375L18 13M18 13L13.7625 8.7625M18 13H8M25 13C25 19.6274 19.6274 25 13 25C6.37258 25 1 19.6274 1 13C1 6.37258 6.37258 1 13 1C19.6274 1 25 6.37258 25 13Z"
+										stroke="black" stroke-linecap="round" stroke-linejoin="round" />
+								</svg>
+							</button>
+							<span class="main-modal__item">64 Pages | Download time - 10 sec.</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- popup modal -->
+	<div class="popup-modal modal fade" id="popupModal" tabindex="-1" aria-labelledby="popupModalLabel"
+		aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-xl">
+			<div class="modal-content">
+				<button type="button" class="popup-modal__close-btn" data-bs-dismiss="modal">
+					<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<rect x="11" y="10" width="16" height="2" transform="rotate(45 11 10)" fill="white" />
+						<rect x="10" y="21" width="16" height="2" transform="rotate(-45 10 21)" fill="white" />
+						<circle cx="16" cy="16" r="15" stroke="white" stroke-width="2" />
+					</svg>
+				</button>
+				<div class="popup-modal__body modal-body">
+					<div class="popup-modal__odd">
+						<div class="popup-modal__headline">
+							<h6 class="popup-modal__title">Descriptive brochure <br>
+								about comunity</h6>
+							<ul class="popup-modal__list">
+								<li class="popup-modal__item">Masterplan</li>
+								<li class="popup-modal__item">Lifestyle</li>
+								<li class="popup-modal__item">Gallery</li>
+								<li class="popup-modal__item">Floor plans</li>
+							</ul>
+						</div>
+						<form action="" method="post" class="popup-modal__form" data-gtag-submit="popup">
+							<div class="popup-modal__form__input">
+								<input class="form-control" type="name" name="name" placeholder="First name" required>
+							</div>
+							<div class="popup-modal__form__input">
+								<input class="form-control" type="email" name="email" placeholder="Email adress"
+									required>
+							</div>
+							<div class="popup-modal__form__input">
+								<input class="form-control" type="tel" name="phone" placeholder="Phone number" required>
+							</div>
+							<input type="hidden" name="project" value="the_comunity">
+							<input type="hidden" name="description" value="page_form">
+							<input type="hidden" name="duration" class="duration" value="">
+							<input type="hidden" name="pasted_fields" class="pasted_fields" value="">
+							<input type="hidden" name="language" value="english">
+							<div class="popup-modal__form__button">
+								<button class="popup-modal__form__btn" type="submit">Download Brochure
+									<svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path
+											d="M4.5 16C4.5 22.6274 9.87258 28 16.5 28C23.1274 28 28.5 22.6274 28.5 16C28.5 9.37258 23.1274 4 16.5 4C9.87258 4 4.5 9.37258 4.5 16Z"
+											fill="white" stroke="white" stroke-linecap="round"
+											stroke-linejoin="round" />
+										<path d="M12.2623 16.7627L16.4998 21.0002L20.7373 16.7627" stroke="#C77C46"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16.5 11V21" stroke="#C77C46" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+								</button>
+								<span class="popup-modal__form__item">64 Pages | Download time - 10 sec.</span>
+							</div>
+						</form>
+					</div>
+					<div class="popup-modal__even">
+						<img src="img/main-brochure.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+		<!-- admin -->
+		<div class="modal fade" id="adminModal" tabindex="-1" aria-labelledby="adminModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                            <div class="modal-body w-100">
+                                    <div class="modal-form">
+                                            <div class="modal-form__desc text-center paragraph">title</div>
+                                    </div>
+                            </div>
+                            <div class="modal-footer justify-content-center border-0 pt-0">
+                                    <button type="button" class="btn close-button" data-bs-dismiss="modal">close</button>
+                            </div>
+                    </div>
+            </div>
+    </div>
+	</div>
+
+	</div>
+	<script src="js/app.min.js"></script>
+	<script src="https://form.sales-inquiries.ae/static/events-ajax-dist.js"></script>
+	<script src="https://form.sales-inquiries.ae/static/form-dist.js"></script>
+</body>
+
+</html>

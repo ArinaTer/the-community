@@ -1,0 +1,16 @@
+# Database state files
+/database
+
+# Dependencies npm
+node_modules
+
+# Applications
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Visual Studio Code history
+.history/

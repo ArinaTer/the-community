@@ -1,0 +1,48 @@
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+
+// height
+=rh($height)
+  @media only screen and (max-height: $height + "px")
+    @content
+
+=rhmin($height)
+  @media only screen and (min-height: $height + "px")
+    @content
+
+  // width height
+=rrh($height,$width)
+  @media (max-width: $width + "px") and (max-height: $height + "px")
+    @content
+
+@mixin css-lock($min-size: 1, $max-size: 1.4, $min-width: 20, $max-width: 100, $property: font-size, $unit: px)
+  #{$property}: #{$max-size}#{$unit}
+  #{$property}: calc(#{$min-size}#{$unit} + (#{$max-size} - #{$min-size}) * ((100vw - #{$min-width}#{$unit}) / (#{$max-width} - #{$min-width})))
+  @media (max-width: #{$min-width}#{$unit})
+    #{$property}: #{$min-size}#{$unit}
+  @media (min-width: #{$max-width}#{$unit})
+    #{$property}: #{$max-size}#{$unit}
+
+=f($name, $font-size: null, $letter-spacing: null)
+  $font-family: null
+  @if $name == "l"
+    $font-family: "light"
+    font-family: $font-family
+    font-weight: normal
+  @if $font-size != null
+    font-size: $font-size + px
+  @if $letter-spacing != null
+    letter-spacing: ($letter-spacing / 1000) + em
+
+=font-face($font-family, $file-path, $weight: normal, $style: normal)
+  @font-face
+    font-family: $font-family
+    font-weight: $weight
+    font-style: $style
+    src: url('#{$file-path}.woff2') format('woff2'), url('#{$file-path}.woff') format('woff'), url('#{$file-path}.ttf') format('truetype')
