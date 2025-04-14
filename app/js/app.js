@@ -4,10 +4,7 @@ import * as bootstrap from "bootstrap";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger.js";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin.js";
-import { DrawSVGPlugin } from "gsap/DrawSVGPlugin.js";
-import { SplitText } from "gsap/SplitText.js";
 import { CSSRulePlugin } from "gsap/CSSRulePlugin.js";
-import { MorphSVGPlugin } from "gsap/MorphSVGPlugin.js";
 import SmoothScroll from "smoothscroll-for-websites";
 import Swiper, {
   Navigation,
@@ -18,14 +15,10 @@ import Swiper, {
   Thumbs,
   Controller,
 } from "swiper";
-import Splitting from "splitting";
 
 gsap.registerPlugin(
   ScrollTrigger,
   ScrollToPlugin,
-  MorphSVGPlugin,
-  SplitText,
-  DrawSVGPlugin,
   CSSRulePlugin
 );
 
@@ -95,27 +88,7 @@ myFunctions.isWebp();
   });
 })();
 
-// text lines
-(function splittingText() {
-  document.querySelectorAll(".split-lines").forEach((el) => {
-    Splitting({ target: el, by: "lines" });
-  });
 
-  document.querySelectorAll(".split-lines .word").forEach((el) => {
-    Splitting({ target: el, by: "lines" });
-  });
-
-  document.querySelectorAll(".split-lines-box").forEach((el) => {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: el,
-          start: "top 100%",
-        },
-      })
-      .to(el, { className: "split-lines-box split" });
-  });
-})();
 
 (function gsapMatchMedia() {
   ScrollTrigger.matchMedia({
